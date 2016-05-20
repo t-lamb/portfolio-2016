@@ -1,0 +1,169 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'core_sans_d_35_regularregular';
+    src: url('fonts/CoreSansD35-webfont.eot');
+    src: url('fonts/CoreSansD35-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/CoreSansD35-webfont.woff2') format('woff2'),
+         url('fonts/CoreSansD35-webfont.woff') format('woff'),
+         url('fonts/CoreSansD35-webfont.ttf') format('truetype'),
+         url('fonts/CoreSansD35-webfont.svg#core_sans_d_35_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*--END RESET----------------------*/
+
+html {
+  	font-family: 'core_sans_d_35_regularregular';
+  	font-size: 16px;
+  	color: #34495E;
+}
+a {
+  	color: #34495E;
+  	text-decoration: none;
+}
+a:hover {
+  	color:#67809F;
+  	text-decoration: underline;
+}
+h1 {
+  	font-style: italic;
+  	font-size: 1.5rem;
+}
+h2 {
+  	font-size: 1.25rem;
+  	font-weight: bold;
+  	padding: 0 0 .5rem 0;
+}
+h3 {
+  	font-size: 1.5rem;
+}
+p {
+  	font-size: 1rem;
+  	padding: .5rem 0 1rem;
+}
+
+/*--HEADER--------------------*/
+
+header {
+  	position:fixed;
+  	top: 0;
+  	left:0;
+  	right:0;
+  	z-index:10;
+  	height: 3rem;
+  	background-color:#ffffff;
+  	margin: 0 auto;
+  	-webkit-transition: 0.25s top linear;
+  	-transition: 0.25s top linear;
+}
+.logo {
+  	float: left;
+  	width: 3.75rem;
+  	padding: .2rem 0 0 1rem;
+}
+#header-title {
+  	font-size: 1.5rem;
+  	float: left;
+  	padding: 0.5rem 0;
+  	text-decoration: none;
+}
+#header-nav-list {
+  	font-style: none; 
+  	float: right;
+  	padding-right: 1.5rem;
+}
+.header-nav-item {
+  	float: left; 
+}
+.header-nav-link {
+  	font-size: 1rem;
+  	padding: .9rem 0 0 1.5rem;
+  	color: #4d5263;
+  	display: inline-block;
+  	text-decoration: none;
+}
+#burger-icon {
+  	float: right;
+  	margin: 0 .5rem;
+  	width: 3rem;
+  	display: none;
+}
+
+/*--CONTENT-------------*/
+.container {
+	margin: 0 auto;
+	padding: 3rem 0;
+	text-align: center;
+}
+.portfolio_item {
+	display: inline-block;
+	background-color: black;
+	margin: 1rem;
+	padding: 0;
+	position: relative;
+	width:26%;
+}
+.portfolio_item img {
+    width: 100%;
+    height: auto;
+    	opacity: 0.3;
+}
+.portfolio_item h3 {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 100%;
+    color: #ffffff;
+}
+
