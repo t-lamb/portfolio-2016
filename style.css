@@ -142,10 +142,10 @@ header {
 
 /*--CONTENT-------------*/
 .container {
+	display: inline-block;
+	width:100%;
 	margin: 0 auto;
 	padding: 2rem 0 0 0;
-	text-align: center;
-	width:100%;
 	font-size: 0;
 }
 .portfolio_item {
@@ -155,6 +155,7 @@ header {
 	padding: 0;
 	position: relative;
 	width:50%;
+	text-align: center;
 }
 .portfolio_item img {
     width: 100%;
