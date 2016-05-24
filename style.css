@@ -214,6 +214,9 @@ header {
 .text-block{
 	padding: 1.5rem;
 }
+.proj-item img{
+	vertical-align: top;
+}
 
 /*--FOOTER----------------------*/
 .footer-social{
