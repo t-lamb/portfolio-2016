@@ -60,6 +60,9 @@ table {
     font-style: normal;
 
 }
+img {
+	max-width: 100%;
+}
 
 /*--END RESET----------------------*/
 
@@ -76,7 +79,7 @@ a:hover {
   	color:#67809F;
 }
 h1 {
-  	font-size: 1.5rem;
+  	font-size: 3rem;
 }
 h2 {
   	font-size: 1.25rem;
@@ -145,7 +148,7 @@ header {
 	display: inline-block;
 	width:100%;
 	margin: 0 auto;
-	padding: 2rem 0 0 0;
+	padding: 3.5rem 0 0 0;
 	font-size: 0;
 }
 .portfolio_item {
@@ -172,29 +175,39 @@ header {
     width: 100%;
     color: #ffffff;
 }
-.info-wrap{
+.info-wrap, .proj-wrap {
 	width: 100%;
 	display: flex;
 	padding: 3.5rem 0 3rem 0;
 	flex-wrap:wrap;
+	font-size: 0;
 }
-.info-item{
-	width: 50%;
-}
-.info-item img{
-	max-width: 100%;
-}
-.info-item h2{
+.info-item h2, .proj-item h2{
 	padding: 2rem 2rem .5rem 1rem;
 }
-.info-item p{
+.bio{
 	padding: 2rem 1rem 0 1rem;
 	font-size: 1.25rem;
 	color: #67809F;
 }
 .info-item li{
+	font-size: 1rem;
 	padding: 1rem 0 0 1rem;
 }
+.proj-item p {
+	font-size: 1rem;
+	padding: 1rem 1rem 0 1rem;
+}
+.info-wide{
+	width: 50%;
+}
+.medium{
+	width: 50%;
+}
+.small{
+	width: 25%;
+}
+
 /*--FOOTER----------------------*/
 .footer-social{
 	padding: 2rem 1rem 2rem 1rem;
@@ -293,6 +306,12 @@ header {
 	}
 	.info-item{
 		width: 100%;
+	}
+	.medium{
+		width: 100%;
+	}
+	.small{
+		width: 50%;
 	}
 
 }
