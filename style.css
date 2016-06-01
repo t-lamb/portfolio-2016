@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1.2;
+	line-height: 1.4;
 }
 ol, ul {
 	list-style: none;
@@ -179,7 +179,7 @@ header {
 .flex-wrap {
 	width: 100%;
 	display: flex;
-	padding: 3.5rem 0 3rem 0;
+	padding: 3.5rem 0 0 0;
 	flex-wrap: wrap;
 	font-size: 0;
 }
@@ -192,7 +192,7 @@ header {
 }
 .flex-wrap p {
 	font-size: 1rem;
-	padding: .5rem 0;
+	padding: .5rem 0 1rem 0;
 }
 .flex-wrap h3{
 	padding: 0 1rem 0 0;
@@ -211,8 +211,14 @@ header {
 .small{
 	width: 25%;
 }
-.text-block{
+.title-block{
 	padding: 1.5rem;
+}
+.text-block{
+	padding: 1.5rem 1.5rem 1rem 1.5rem;
+	width: 70%;
+	max-width: 46rem;
+	margin: 0 auto;
 }
 .proj-item img{
 	vertical-align: top;
@@ -300,8 +306,14 @@ header {
   	.portfolio_item {
     	width: 100%;
   	}
+  	.text-block{
+  		width: 100%;
+  	}
 }
 @media screen and (max-width: 600px){
+	h1{
+		font-size: 2.5rem;
+	}
 	.footer-social{
 		border-right: none;
 		border-bottom: 1px solid #A3B6C6;
