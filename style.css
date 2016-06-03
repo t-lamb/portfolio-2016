@@ -223,6 +223,9 @@ header {
 .proj-item img{
 	vertical-align: top;
 }
+.proj-video{
+	margin: 0 auto;
+}
 
 /*--FOOTER----------------------*/
 .footer-social{
