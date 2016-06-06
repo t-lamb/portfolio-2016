@@ -226,6 +226,9 @@ header {
 .proj-video{
 	margin: 0 auto;
 }
+iframe{
+	padding:1rem 0 0 0;
+}
 
 /*--FOOTER----------------------*/
 .footer-social{
@@ -267,7 +270,7 @@ header {
 @media screen and (max-width: 800px){
   	.header-logo {
     	padding-left: .5rem;
-    	width: 100%;
+    	width: 70%;
     	border: none;
   	}
   	.header-nav {
@@ -289,23 +292,12 @@ header {
     	padding: 1.1rem .75rem .75rem 0; 
   	}
   	.burger-icon{
+  		display: block;
   		float: right;
-  		padding: 1rem;
-  		margin: 0 .5rem;
-  		width: 3rem;
+  		padding: 0;
+  		margin: .7rem .7rem 0 0;
+  		width: 2rem;
   	}
-  	.burger-icon img:first-child{
-    	display: inline-block;
-  	}
-  	.burger-icon img:last-child{
-  		display: none;
-	}
-	.burger-icon:hover img:last-child{
-  		display: inline-block;
-	}
-	.burger-icon:hover img:first-child{
-  		display: none;
-	}
   	.portfolio_item {
     	width: 100%;
   	}
