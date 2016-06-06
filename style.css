@@ -228,6 +228,7 @@ header {
 }
 iframe{
 	padding:1rem 0 0 0;
+	width:100%;
 }
 
 /*--FOOTER----------------------*/
@@ -264,6 +265,9 @@ iframe{
 @media screen and (max-width: 900px){
   .info-wide {
   	width: 100%;
+  }
+  iframe{
+  	width:100%;
   }
 }
 
@@ -329,6 +333,9 @@ iframe{
 	}
 	.small{
 		width: 50%;
+	}
+	iframe{
+		width:100%;
 	}
 
 }
