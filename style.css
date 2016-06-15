@@ -68,7 +68,7 @@ img {
 
 /*--COLORS----------
 dark grey: #3b3a36;
-med grey: #b3c2bf;
+med grey: #A3B0AE;
 light grey: #e9ece5;
 dark blue: #81BBB0;
 light blue: #c0dfd9;
@@ -79,11 +79,11 @@ html {
   	color: #3b3a36;
 }
 a {
-  	color: #81BBB0;
+  	color: #A3B0AE;
   	text-decoration: none;
 }
 a:hover {
-  	color:#c0dfd9;
+  	color:#81BBB0;
 }
 h1 {
 	color:#c0dfd9;
@@ -92,6 +92,7 @@ h1 {
 h2 {
   	font-size: 1.25rem;
   	font-weight: bold;
+  	padding: 0 0 .5rem 0;
 }
 h3 {
   	font-size: 1.5rem;
@@ -102,6 +103,10 @@ h4 {
 p {
   	font-size: 1rem;
   	padding: .5rem 0 1rem;
+}
+li {
+	font-size: 1rem;
+	padding: 1rem 0 0 0;
 }
 
 .svg-hover img:last-child{
@@ -152,7 +157,7 @@ header a{
   	display: none;
 }
 .active {
-	color: #67809F;
+	color: #A3B0AE;
 }
 
 /*--CONTENT-------------*/
@@ -195,21 +200,18 @@ header a{
 	flex-wrap: wrap;
 	font-size: 0;
 }
-.flex-wrap h2{
-	padding: 0 0 .5rem 0;
+.page-head {
+	padding: 1rem 1.5rem 1.5rem 1.5rem;
 }
-.flex-wrap li{
-	font-size: 1rem;
-	padding: 1rem 0 0 0;
+.tag-line{
+	padding: 1rem .2rem;
 }
-.flex-wrap p {
-	font-size: 1rem;
-	padding: .5rem 0 1rem 0;
-}
-.flex-wrap h3{
-	padding: 0 1rem 0 0;
+.bio{
 	font-size: 1.25rem;
-	color: #67809F;
+	color: #A3B0AE;
+}
+.info-item{
+	padding: 1rem 1.5rem;
 }
 .proj-item{
 	width: 100%;
@@ -226,14 +228,15 @@ header a{
 .small{
 	width: 25%;
 }
-.title-block{
-	padding: 1.5rem;
-}
 .text-block{
 	padding: 1.5rem 1.5rem 1rem 1.5rem;
 	width: 70%;
 	max-width: 46rem;
 	margin: 0 auto;
+}
+.text-block p{
+	font-size: 1rem;
+	padding: .5rem 0 1rem 0;
 }
 .proj-item img{
 	vertical-align: top;
@@ -244,9 +247,6 @@ header a{
 iframe{
 	padding:1rem 0 0 0;
 	width:100%;
-}
-.tag-line{
-	padding: 0;
 }
 
 /*--FOOTER----------------------*/
@@ -290,36 +290,6 @@ iframe{
 }
 
 @media screen and (max-width: 800px){
-  	.header-logo {
-    	padding-left: .5rem;
-    	width: 70%;
-    	border: none;
-  	}
-  	.header-nav {
-		position: fixed;
-		top: 0px;
-		left: 0px;
-		height: 0px;
-		width: 100%;
-		float: none;
-		margin: 0px;
-		padding: 0px;
-		background-color: #d7dae3;
-		text-align: center;
-		overflow: hidden;
-		-webkit-transition: 0.25s height linear;
-		-transition: 0.25s height linear;
-  	} 
-  	.header-nav a{
-    	padding: 1.1rem .75rem .75rem 0; 
-  	}
-  	.burger-icon{
-  		display: block;
-  		float: right;
-  		padding: 0;
-  		margin: .7rem .7rem 0 0;
-  		width: 2rem;
-  	}
   	.portfolio_item {
     	width: 100%;
   	}
@@ -328,15 +298,27 @@ iframe{
   	}
 }
 @media screen and (max-width: 600px){
+	.header-logo {
+    	border: none;
+    	padding-right: 0; 
+  	}
+  	.header-nav {
+  		padding:0;
+  	} 
+  	.header-nav a{
+  		float: right;
+    	padding: .8rem 1.5rem 0 .5rem;
+  	}
 	h1{
 		font-size: 2.5rem;
 	}
 	.footer-social{
 		border-right: none;
-		border-bottom: 1px solid #A3B6C6;
+		border-bottom: 1px solid #e9ece5;
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
+		padding: 1.5rem 1.5rem 1.5rem 1.6rem;
 	}
 	.social img{
 		width: 2.5rem;
@@ -357,53 +339,34 @@ iframe{
 	}
 
 }
-/*@media (max-width: 700px) {
-  .project-image-small-spaced {
-    padding:20px 0px 20px 0px !important;
-  }
-  footer {
-    text-align: center;
-  }
-  .footer-email {
-    font-size: 1.25rem;
-    float: none;
-    padding: 2rem 0 2rem 0;
-    color: #ffffff;
-    background-color: #4d5263;
-  }
-  .footer-icon-list {
-    float: none;
-    padding: 0 0 2rem 0;
-    background-color: #4d5263;
-  }
-  .footer-icon {
-    padding: 0 .75rem;
-  }
-  .footer-icon img {
-    width: 4rem;
-  }
-}
-@media screen and (max-width: 640px){
-  #header-wrapper {
-    height: 45px;
-  }
-  .footer-icon {
-    padding: 0 .5rem;
-  }
-  #header-title {
-    font-size: 1.25rem;
-    padding: 0.7rem 0;
-  }
-  #header-logo {
-    width: 3rem;
-    padding: .45rem 0 0 .5rem;
-  }
-}
-@media screen and (max-width:320px){
-  .footer-icon img {
-    width: 3rem;
-  }
+@media screen and (max-width: 512px){
+	.header-logo {
+    	width: 100%;
+    	font-size: 1.25rem;
+  	}
+  	.header-logo img{
+  		width: 1.6rem;
+  		margin: 0 .3rem .3rem 0;
+  	}
+  	.header-nav {
+  		width: 100%;
+  		display: flex;
+  		
+  	}
+  	.header-nav a{
+  		padding: .5rem .75rem 0 1.5rem;
+  		clear: both;
+  		color: #A3B0AE;
 
+  	}
+  	header {
+  		height: 5rem;
+  	}
+  	.page-head {
+  		width: 100%;
+  		margin: 1.5rem 0 0 0;
+  		border-top: 1px solid #e9ece5;
+  	}
 }
-*/
+
 
