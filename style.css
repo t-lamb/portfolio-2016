@@ -209,9 +209,10 @@ header a{
 .bio{
 	font-size: 1.25rem;
 	color: #A3B0AE;
-}
-.info-item{
 	padding: 1rem 1.5rem;
+}
+.info-text{
+	padding: 1.5rem;
 }
 .proj-item{
 	width: 100%;
