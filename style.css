@@ -60,6 +60,17 @@ table {
          url('fonts/CoreSansD35-webfont.svg#core_sans_d_35_regularregular') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+@font-face {
+    font-family: 'core_sans_d_45_mediumregular';
+    src: url('CoreSansD45-webfont.eot');
+    src: url('CoreSansD45-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CoreSansD45-webfont.woff2') format('woff2'),
+         url('CoreSansD45-webfont.woff') format('woff'),
+         url('CoreSansD45-webfont.ttf') format('truetype'),
+         url('CoreSansD45-webfont.svg#core_sans_d_45_mediumregular') format('svg');
+    font-weight: bold;
+    font-style: normal;
 
 }
 img {
@@ -94,10 +105,12 @@ h1 {
 h2 {
   	font-size: 1.25rem;
   	font-weight: bold;
-  	padding: 0 0 .5rem 0;
+  	padding:0 0 .5rem 0;
 }
 h3 {
   	font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: .08rem;
 }
 h4 {
 	font-size: 2rem;
