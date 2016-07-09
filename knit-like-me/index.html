@@ -1,0 +1,212 @@
+<html>
+<head>
+	<title>Knit like me</title>
+	<link rel="stylesheet" type="text/css" href="knitstyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Miriam+Libre" rel="stylesheet">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<script type="text/javascript" src="p5.js"></script>
+	<script type="text/javascript" src="knitscript.js"></script>
+
+</head>
+<body>
+<div id="wrapper">
+	<header>
+		<h1>Knit like me.</h1><div id="back"><a href="knitcode.html">&#8619; Knit something else! &#8619;</a></div>
+	</header>
+	
+	<div id="p5can">
+	</div>
+
+	<div id="content" class="content">
+		<p class="tag-line">Knitting is a lot like programming &amp;&amp; Now you can knit on your screen using code!</p>
+		
+		<p class="instructions">1. Choose A Needle Size</p>
+		<div class="menu">
+			<h2>Needles&#91; &#93; = &#123;</h2>
+			<ul id="needle_list">
+				<li class="needle">
+					<svg version="1.1" id="n0" x="0px" y="0px" width="8px" viewBox="0 0 8 150">
+					<g transform="scale(.08 1)">
+						<path d="M50,150c18.7,0,50-30,50-30H0C0,120,31.2,150,50,150z"/>
+						<rect width="100" height="120"/>
+					</g>
+					</svg>
+					<p class="label">0<br/>2mm</p><!--8px-->
+				</li>
+				<li class="needle">
+					<svg version="1.1" id="n3" x="0px" y="0px" width="13px" viewBox="0 0 13 150">
+					<g transform="scale(.13 1)" >
+						<path d="M50,150c18.7,0,50-30,50-30H0C0,120,31.2,150,50,150z"/>
+						<rect width="100" height="120"/>
+					</g>
+					</svg>
+					<p class="label">3<br/>3.25mm</p><!--13px-->
+				</li>
+				<li class="needle">
+					<svg version="1.1" id="n6" x="0px" y="0px" width="17px" viewBox="0 0 17 150">
+					<g transform="scale(.17 1)" >
+						<path d="M50,150c18.7,0,50-30,50-30H0C0,120,31.2,150,50,150z"/>
+						<rect width="100" height="120"/>
+					</g>
+					</svg>
+					<p class="label">6<br/>4mm</p><!--17px-->
+				</li>
+				<li class="needle">
+					<svg version="1.1" id="n9" x="0px" y="0px" width="23px" viewBox="0 0 23 150">
+					<g transform="scale(.23 1)" >
+						<path d="M50,150c18.7,0,50-30,50-30H0C0,120,31.2,150,50,150z"/>
+						<rect width="100" height="120"/>
+					</g>
+					</svg>
+					<p class="label">9<br/>5.5mm</p><!--23px-->
+				</li>
+				<li class="needle">
+					<svg version="1.1" id="n13" x="0px" y="0px" width="37px" viewBox="0 0 37 150">
+					<g transform="scale(.37 1)" >
+						<path d="M50,150c18.7,0,50-30,50-30H0C0,120,31.2,150,50,150z"/>
+						<rect width="100" height="120"/>
+					</g>
+					</svg>
+					<p class="label">13<br/>9mm</p><!--37px-->
+				</li>
+				<li class="needle">
+					<svg version="1.1" id="n17" x="0px" y="0px" width="51px" viewBox="0 0 51 150">
+					<g transform="scale(.51 1)" >
+						<path d="M50,150c18.7,0,50-30,50-30H0C0,120,31.2,150,50,150z"/>
+						<rect width="100" height="120"/>
+					</g>
+					</svg>
+					<p class="label">17<br/>12mm</p><!--51px-->
+				</li>
+			</ul>
+			<h2>&#125;</h2>
+		</div><!--close needle menu-->
+		
+		<p class="instructions">2. Choose A Yarn Weight</p>
+		<div class="menu">
+			<h2>YarnWeights&#91; &#93; = &#123;</h2>
+			<ul id="yarn_list">
+				<li class="yarn">
+					<svg version="1.1" id="y2" x="0px" y="0px" width="5px" viewBox="0 0 5 150">
+					<g transform="scale(.05 1)">
+						<polygon points="0,150 100,150 100,106.9 0,136.8 	"/>
+						<polygon points="0,110.2 100,80.3 100,62.1 0,92 	"/>
+						<polygon points="0,132.6 100,102.7 100,84.5 0,114.4 	"/>
+						<polygon points="100,0 0,0 0,43.1 100,13.2 	"/>
+						<polygon points="0,69.7 0,87.9 100,58 100,39.8 	"/>
+						<polygon points="100,17.4 0,47.3 0,65.5 100,35.6 	"/>
+					</g>
+					</svg>
+					<p class="label">Lace<br/>2ply</p><!--5px-->
+				</li>
+				<li class="yarn">
+					<svg version="1.1" id="y4" x="0px" y="0px" width="9px" viewBox="0 0 9 150">
+					<g transform="scale(.09 1)">
+						<polygon points="0,150 100,150 100,106.9 0,136.8 	"/>
+						<polygon points="0,110.2 100,80.3 100,62.1 0,92 	"/>
+						<polygon points="0,132.6 100,102.7 100,84.5 0,114.4 	"/>
+						<polygon points="100,0 0,0 0,43.1 100,13.2 	"/>
+						<polygon points="0,69.7 0,87.9 100,58 100,39.8 	"/>
+						<polygon points="100,17.4 0,47.3 0,65.5 100,35.6 	"/>
+					</g>
+					</svg>
+					<p class="label">Fingering<br/>4ply</p><!--9px-->
+				</li>
+				<li class="yarn">
+					<svg version="1.1" id="y5" x="0px" y="0px" width="12px" viewBox="0 0 12 150">
+					<g transform="scale(.12 1)">
+						<polygon points="0,150 100,150 100,106.9 0,136.8 	"/>
+						<polygon points="0,110.2 100,80.3 100,62.1 0,92 	"/>
+						<polygon points="0,132.6 100,102.7 100,84.5 0,114.4 	"/>
+						<polygon points="100,0 0,0 0,43.1 100,13.2 	"/>
+						<polygon points="0,69.7 0,87.9 100,58 100,39.8 	"/>
+						<polygon points="100,17.4 0,47.3 0,65.5 100,35.6 	"/>
+					</g>
+					</svg>
+					<p class="label">Sport<br/>5ply</p><!--12px-->
+				</li>
+				<li class="yarn">
+					<svg version="1.1" id="y8" x="0px" y="0px" width="18px" viewBox="0 0 18 150">
+					<g transform="scale(.18 1)">
+						<polygon points="0,150 100,150 100,106.9 0,136.8 	"/>
+						<polygon points="0,110.2 100,80.3 100,62.1 0,92 	"/>
+						<polygon points="0,132.6 100,102.7 100,84.5 0,114.4 	"/>
+						<polygon points="100,0 0,0 0,43.1 100,13.2 	"/>
+						<polygon points="0,69.7 0,87.9 100,58 100,39.8 	"/>
+						<polygon points="100,17.4 0,47.3 0,65.5 100,35.6 	"/>
+					</g>
+					</svg>
+					<p class="label">DK<br/>8ply</p><!--18px-->
+				</li>
+				<li class="yarn">
+					<svg version="1.1" id="y10" x="0px" y="0px" width="24px" viewBox="0 0 24 150">
+					<g transform="scale(.24 1)">
+						<polygon points="0,150 100,150 100,106.9 0,136.8 	"/>
+						<polygon points="0,110.2 100,80.3 100,62.1 0,92 	"/>
+						<polygon points="0,132.6 100,102.7 100,84.5 0,114.4 	"/>
+						<polygon points="100,0 0,0 0,43.1 100,13.2 	"/>
+						<polygon points="0,69.7 0,87.9 100,58 100,39.8 	"/>
+						<polygon points="100,17.4 0,47.3 0,65.5 100,35.6 	"/>
+					</g>
+					</svg>
+					<p class="label">Worsted<br/>10ply</p><!--24px-->
+				</li>
+				<li class="yarn">
+					<svg version="1.1" id="y12" x="0px" y="0px" width="28px" viewBox="0 0 28 150">
+					<g transform="scale(.28 1)">
+						<polygon points="0,150 100,150 100,106.9 0,136.8 	"/>
+						<polygon points="0,110.2 100,80.3 100,62.1 0,92 	"/>
+						<polygon points="0,132.6 100,102.7 100,84.5 0,114.4 	"/>
+						<polygon points="100,0 0,0 0,43.1 100,13.2 	"/>
+						<polygon points="0,69.7 0,87.9 100,58 100,39.8 	"/>
+						<polygon points="100,17.4 0,47.3 0,65.5 100,35.6 	"/>
+					</g>
+					</svg>
+					<p class="label">Bulky<br/>12ply</p><!--28px-->
+				</li>
+			</ul>
+			<h2>&#125;</h2>
+		</div><!--close yarn menu-->
+
+		<p class="instructions">3. Choose A Color</p>
+		<div class="menu">
+			<h2>YarnColors&#91; &#93; = &#123;</h2>
+			<ul id="color_list">
+				<li class="color" id="blue">
+				</li>
+				<li class="color" id="green">
+				</li>
+				<li class="color" id="yellow">
+				</li>
+				<li class="color" id="red">
+				</li>
+				<li class="color" id="purple">
+				</li>
+				<li class="color" id="black">
+				</li>
+			</ul>
+			<h2>&#125;</h2>
+		</div><!--close yarn menu-->
+		
+		<p class="instructions">
+			//To make a pattern, you can encrypt a secret message
+		</p>
+
+		<div class="menu">
+			<h2>
+				Your message:
+			</h2>
+				<div class="cursor" id="cursor"> </div>
+				<input type="text" value=" " id="input">
+		</div><!--close string-->
+
+		<a href="#" id="button">Knit Something!</a>
+
+	</div><!--close content-->
+
+
+</div><!--close wrapper-->
+
+</body>
+</html>

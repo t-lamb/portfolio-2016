@@ -37,7 +37,7 @@ ol, ul {
   margin: 0;
   padding: 0;
 }
-blockquote, q {
+blockquote,  q {
 	quotes: none;
 }
 blockquote:before, blockquote:after,
@@ -248,7 +248,7 @@ header a{
 .info-text a:hover {
     color:#81BBB0;
 }
-.proj-item{
+.proj-item {
 	width: 100%;
 }
 .info-wide{
@@ -272,6 +272,9 @@ header a{
 .text-block p{
 	font-size: 1rem;
 	padding: .5rem 0 1rem 0;
+}
+.proj-link{
+  margin: 0 0 3rem 0;
 }
 .proj-item img{
 	vertical-align: top;

@@ -1,0 +1,155 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -- END RESET --------------------------------- */
+
+/*
+colors:
+main grey: #BDC3C7;
+main blue: #042AC9;
+light grey: #DADFE1;
+darker grey: #6C7A89;
+almost black: #22313F;
+*/
+
+body {
+	font-family: 'Cousine', monospace;
+	font-size: 1rem;
+	background-color: #042AC9;
+}
+h1 {
+	font-size: 1.25rem;
+	padding: 0.15rem 1rem;
+	float: left;
+}
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	height: 2rem;
+	width: 100%;
+	color: #22313F;
+	background-color: #BDC3C7;
+	margin: 0 auto;
+	padding: 0;
+	border-bottom: 1px solid #6C7A89;
+	outline: 1px solid #22313F;
+}
+canvas {
+	cursor: none;
+}
+footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height:4px;
+	background-color: #BDC3C7;
+	border-top: 1px solid #ffffff;
+	outline: 1px solid #DADFE1;
+	width: 100%;
+}
+button {
+	border-top: 2px solid #ffffff;
+	border-left: 2px solid #ffffff;
+	border-bottom: 2px solid #6C7A89;
+	border-right: 2px solid #6C7A89;
+	color: inherit;
+	cursor: pointer;
+	outline: none;
+	position: relative;
+	text-align: center;
+	margin: .2rem 1rem 0 .8rem;
+	padding: .3rem .5rem;
+	float: right;
+	display: inline;
+}
+button:hover {
+	color: #ffffff;
+	background-color: #042AC9;
+}
+.instructions {
+	padding: .3rem 0;
+	float: right;
+	display: inline;
+}
+.dropdown {
+	display: none;
+	position: fixed;
+	top: 2.1rem;
+	right: 0;
+	color: #22313F;
+	background-color: #BDC3C7;
+	padding: 1rem;
+	border-top: 1px solid #ffffff;
+	border-left: 1px solid #ffffff;
+	border-bottom: 1px solid #6C7A89;
+	border-right: 1px solid #6C7A89;
+	outline-top: 1px solid #DADFE1;
+	outline-left: 1px solid #DADFE1;	
+	outline-bottom: 1px solid #22313F;
+	outline-right: 1px solid #22313F;
+}
+.icons {
+	position: fixed;
+	top: 4rem;
+	left: 1rem;
+	text-align: center;
+}
+.desktopicon {
+	padding: 0 1rem 1rem 0;
+	cursor: pointer;
+}
+.desktopicon p,a{
+	color: #ffffff;
+	font-size: .75rem;
+	padding: .5rem 0;
+	text-decoration: none;
+}
