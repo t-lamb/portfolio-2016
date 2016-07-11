@@ -204,55 +204,6 @@ li:hover .label{
 	text-align: center;
 	display: none;
 }
-#blue {
-	background-color: #33ccff;
-}
-#green {
-	background-color: #66dd66;
-}
-#yellow {
-	background-color: #e9fca3;
-}
-#red {
-	background-color: #ff6666;
-}
-#purple {
-	background-color: #cc33ff;
-}
-#black {
-	background-color: #444444;
-}
-
-@keyframes blink
-{
-	0%   {  background: #9933ff;  }
-	100% {  background: #ffffff;}
-}
-
-@-webkit-keyframes blink {
-	0%   {  background: #9933ff;  }
-	100% {  background: #ffffff;  }
-}
-@-moz-keyframes blink {
-	0%   {  background: #9933ff;  }
-	100% {  background: #ffffff; }
-}
-
-.cursor {
-	background:#9933ff; 
-  	display: inline-block;
-  	width:1rem;
-  	height:1.5rem;
-  	margin: 1rem 0 0 0;
-  	float: left;
-
-    -webkit-animation-name: blink;
-    -webkit-animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-name: blink;
-    -moz-animation-duration: 1.5s;
-    -moz-animation-iteration-count: infinite;
-}
 
 /* ---------------- Media Queries ---------------*/
 

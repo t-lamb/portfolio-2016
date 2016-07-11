@@ -174,6 +174,16 @@ function initcanvas() {
 		draw(x,y);
 	}, false);
 
+	canvas.addEventListener('touchmove', function (e){
+		//console.log("mousemove " + e.clientX + ", " + e.clientY);
+
+		x = e.clientX;
+		y = e.clientY;
+
+		//console.log("mousemove x:" + x + " y:" + y);
+		draw(x,y);
+	}, false);
+
 	//when mouse clicked, get new icon
 	canvas.addEventListener('click', function(){
 		myIndex = newIndex(imgArray.length);
@@ -210,8 +220,13 @@ function initcanvas() {
 		myCursor = imgArray[myIndex];
 	});
 
-	//var recycle = document.getElementById("recycle");
-	//recycle.addEventListener('click', newCanvas());
+	//switch to main icons
+	var misc = document.getElementById("main");
+	misc.addEventListener('click', function(){
+		imgArray = mainArr;
+		myIndex = newIndex(imgArray.length);
+		myCursor = imgArray[myIndex];
+	});
 
 	//draws icons on canvas
 	function draw(xval, yval) {
