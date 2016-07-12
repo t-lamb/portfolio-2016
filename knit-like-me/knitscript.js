@@ -16,6 +16,7 @@ function init() {
 	//add event listeners to needles for interaction
 	for(var i = 0; i < needles.length; i++) {
 		needles[i].addEventListener('click', needleSelect);
+		needles[i].addEventListener('touchend', needleSelect);
 	}
 
 	//set nWidth
@@ -62,6 +63,7 @@ function init() {
 	//add event listeners to yarns
 	for(var i = 0; i < yarns.length; i++) {
 		yarns[i].addEventListener('click', yarnSelect);
+		yarns[i].addEventListener('touchend', yarnSelect);
 	}
 
 	//set yWidth
@@ -89,6 +91,7 @@ function init() {
 	//add event listeners to colors
 	for(var i = 0; i < colors.length; i++) {
 		colors[i].addEventListener('click', colorSelect);
+		colors[i].addEventListener('touchend', colorSelect);
 	}
 
 	//set yColor
@@ -102,13 +105,17 @@ function init() {
 //BUTTON
 
 	//clicking button triggers canvas
-	var button = document.getElementById('button').addEventListener('click', function(e){
+	var button = document.getElementById('button');
+	button.addEventListener('click', buttonPress);
+	button.addEventListener('touchend', buttonPress);
+
+	function buttonPress(e){
 		e.preventDefault();
 		showhide('p5can');
 		showhide('content');
 		showhide('back');
 		start = true;
-	} );
+	}
 	
 	//show/hide divs by changing computed display value
 	function showhide(id) {

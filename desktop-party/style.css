@@ -106,7 +106,7 @@ button {
 	outline: none;
 	position: relative;
 	text-align: center;
-	margin: .2rem 1rem 0 .8rem;
+	margin: .2rem 1rem 0 0;
 	padding: .3rem .5rem;
 	float: right;
 	display: inline;
@@ -116,7 +116,7 @@ button:hover {
 	background-color: #042AC9;
 }
 .instructions {
-	padding: .3rem 0;
+	padding: .3rem .8rem .3rem 0;
 	float: right;
 	display: inline;
 }
@@ -147,9 +147,13 @@ button:hover {
 	padding: 0 0 1rem 0;
 	cursor: pointer;
 }
-.desktopicon p,a{
+.desktopicon p{
 	color: #ffffff;
 	font-size: .75rem;
 	padding: .5rem 0;
 	text-decoration: none;
+}
+.label {
+	text-decoration: none;
+	color: #ffffff;
 }
