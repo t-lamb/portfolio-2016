@@ -50,15 +50,9 @@ table {
 
 /* -- END RESET --------------------------------- */
 
-/*
-colors:
-main grey: #BDC3C7;
-main blue: #042AC9;
-light grey: #DADFE1;
-darker grey: #6C7A89;
-almost black: #22313F;
-*/
-
+* {
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
 body {
 	font-family: 'Cousine', monospace;
 	font-size: 1rem;
