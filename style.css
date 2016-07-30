@@ -206,12 +206,26 @@ header a{
 .portfolio_item img:hover {
     opacity: .9;
 }
-.portfolio_item h3 {
+.portfolio_label {
     position: absolute;
     left: 0;
     top: 45%;
     width: 100%;
     color: #ffffff;
+    margin: 0 auto;
+}
+.portfolio_tag{
+    font-size: 1rem;
+    font-weight: normal;
+    background-color: #ffffff;
+    color: #444444;
+    padding: .5rem;
+    display: none;
+    max-width: 20rem;
+    margin: .5rem auto 0 auto;
+}
+.portfolio_item:hover .portfolio_tag{
+    display: block;
 }
 /*--END PORTFOLIO-----*/
 .flex-wrap {
@@ -410,6 +424,16 @@ iframe{
   	}
   	.social img{
 		margin: 0;
+    }
+    .portfolio_tag{
+        display: block;
+        color: #ffffff;
+        background-color: transparent;
+        margin: 0 auto;
+        max-width: 24rem;
+    }
+    .portfolio_item img:hover {
+        opacity: .6;
     }
 }
 
