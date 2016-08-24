@@ -300,6 +300,26 @@ iframe{
 	padding:1rem 0 0 0;
 	width:100%;
 }
+.pagination {
+  width: 100%;
+  font-size: 0;
+  margin: 2rem 0;
+}
+.pag-link{
+  display: inline-block;
+  padding: 0 1.5rem .5rem 1.5rem;
+  font-size: 1.25rem;
+}
+.arrow{
+  font-size: 2rem;
+  line-height: 1;
+}
+.prev {
+  width: 50%;
+  border-right: 1px solid #dde8e5;
+}
+.next {
+}
 
 /*--FOOTER----------------------*/
 .footer-social{
@@ -388,7 +408,9 @@ iframe{
   	iframe{
   		width:100%;
   	}
-
+    .pag-link{
+      font-size: 1rem;
+    }
 }
 @media screen and (max-width: 512px){
 	 .header-logo {
