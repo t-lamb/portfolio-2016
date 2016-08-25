@@ -300,6 +300,7 @@ iframe{
 	padding:1rem 0 0 0;
 	width:100%;
 }
+/*--PAGINATION----------------------*/
 .pagination {
   width: 100%;
   font-size: 0;
@@ -356,7 +357,6 @@ iframe{
   .info-wide {
   	width: 100%;
   }
-
   iframe{
   	width:100%;
   }
@@ -371,7 +371,7 @@ iframe{
   	}
 }
 @media screen and (max-width: 600px){
-  	.header-logo {
+    .header-logo {
       	border: none;
       	padding-right: 0; 
     }
@@ -381,6 +381,9 @@ iframe{
     .header-nav a{
     		float: right;
       	padding: .8rem 1.5rem 0 .5rem;
+    }
+    .active {
+      text-decoration: underline;
     }
   	h1{
   		font-size: 2.5rem;
@@ -408,12 +411,27 @@ iframe{
   	iframe{
   		width:100%;
   	}
-    .pag-link{
+    .pag-link {
       font-size: 1rem;
+    }
+    .arrow {
+      font-size: 1.5rem;
+    }
+    .prev {
+      width: auto;
+      border: none;
+      padding: 0 0 .5rem 1.5rem;
+    }
+    .next {
+      float: right;
+      padding: 0 1.5rem .5rem 0;
     }
 }
 @media screen and (max-width: 512px){
-	 .header-logo {
+    .container, .flex-wrap {
+      padding: 1.5rem 0 0 0;
+    }
+	  .header-logo {
     	width: 100%;
     	font-size: 1.25rem;
   	}
@@ -434,11 +452,11 @@ iframe{
   		color: #81BBB0;
   	}
   	header {
-  		height: 5rem;
+  		height: 3.5rem;
+      position: relative;
   	}
   	.page-head {
   		width: 100%;
-  		margin: 1.5rem 0 0 0;
   		border-top: 1px solid #e9ece5;
   	}
   	.footer-social {
