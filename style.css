@@ -103,7 +103,7 @@ h1 {
   	font-size: 3.5rem;
 }
 h2 {
-  	font-size: 1.25rem;
+  	font-size: 1.75rem;
   	font-weight: bold;
   	padding:0 0 .5rem 0;
 }
@@ -172,7 +172,7 @@ header a{
   	display: none;
 }
 .active {
-	color: #A3B0AE;
+	text-decoration: underline;
 }
 
 /*--CONTENT-------------*/
@@ -242,8 +242,6 @@ header a{
 	padding: 1rem .2rem;
 }
 .bio {
-	font-size: 1.25rem;
-	color: #A3B0AE;
 	padding: 1.5rem 1.5rem 2rem;
 }
 .bio-pic {
@@ -253,7 +251,6 @@ header a{
   background-position: center;
 }
 .info-text{
-  background-color: #dde8e5;
 	padding: 0 1.5rem 1.5rem 1.5rem;
 }
 .info-text a {
@@ -267,6 +264,7 @@ header a{
 }
 .info-wide{
 	width: 50%;
+  background-color: #F2F5F7;
 }
 .info-text h2{
 	margin-top: 1.5rem;
