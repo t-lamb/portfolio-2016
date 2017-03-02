@@ -1,112 +1,111 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>The Knit Net // Teresa Flour Lamb</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
-    </head>
-    <body>
+<head>
+    <title>The Knit Net // Teresa Flour Lamb</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="header-logo svg-hover">
+                    <a href="index.html">
+                        <img src="imgs/lamb_logo.svg">
+                        <img src="imgs/lamb_logo_hover.svg">
+                        Teresa Flour Lamb
+                    </a>
+                </div><!--/header logo-->
+                <div class="header-nav">
+                    <a href="index.html" class="header-nav-link active">portfolio</a>
+                    <a href="info.html" class="header-nav-link">info</a>
+                    <a href="http://blog.teresaflourlamb.com/" class="header-nav-link">blog</a>
+                </div><!--/header nav-->
+            </nav>
+        </header>
 
-    <header>
-        <div class="header-logo svg-hover">
-            <a href="index.html">
-                <img src="imgs/lamb_logo.svg"><img src="imgs/lamb_logo_hover.svg">Teresa Flour Lamb
-            </a>
-        </div>
-        <div class="burger-icon">
-            <img src="imgs/menu.svg" alt="menu">
-        </div>
-        <div class="header-nav">
-            <a href="index.html" class="header-nav-link">portfolio</a>
-            <a href="info.html" class="header-nav-link">info</a>
-            <a href="http://blog.teresaflourlamb.com/" class="header-nav-link">blog</a>
-        </div>
-    </header>
+        <div class="flex-wrap">
+            <div class="page-head">
+                <h1>The Knit Net</h1>
+                <p class="tag-line">
+                    A web app to make knitting more accessible
+                </p>
+            </div>
+            <div class="proj-item vert">
+                <img src="imgs/theknit/theknit_head.jpg" alt="the knit">
+            </div>
+            <div class="proj-item text-block">
+                <p>
+                    The idea for The Knit Net started as a simple javascript app, <a href="knit-like-me/index.html">Knit Like Me</a>, that I made to demonstrate the similarities between knitting and programming. While focusing on this metaphor, I ended up in many discussions with classmates about how crafting has been left behind by the tech world and how this could be improved.
+                    <br><br>
+                    My goal is to change the way people find, share, and use knitting patterns. Drawing inspiration from the open source movement, I aim to make instructions and resources more interactive and accessible, and foster a collaborative online environment. Most importantly, I want to inspire users to start, finish and share their projects.
+                </p>
+                <p>
+                    <a href="http://theknit.herokuapp.com/">Visit theknit.net &#8605;</a>
+                </p>
+            </div>
+            <div class="proj-item img-block">
+                <img src="imgs/theknit/theknit_interface.jpg" alt="interface">
+            </div>
+            <div class="proj-item text-block">
+                <h2>Research &mdash;</h2>
+                <p>
+                    I began by composing a picture of what it means to be a knitter today. I reached out to friends, classmates, and the online community on Reddit.com/r/knitting. My questions were centered around on what motivates someone to start a project and what that process is like. To help direct my research, I created a persona representing many of my core users.
+                    <br><br>
+                    I created a map of the core user flow, identifying pages and interactions that I want to see in the first version of the app. While my initial idea was centered around generating patterns, the current app encourages users to browse patterns, contribute to the library, and start new projects.
+                </p>
+            </div>
+            <div class="proj-item img-block">
+                <img class="medium" src="imgs/theknit/theknit_persona.png" alt="persona">
+                <img class="medium" src="imgs/theknit/theknit_flow.png" alt="user flow">
+            </div>
+            <div class="proj-item text-block">
+                <h2>Design &amp; Development &mdash;</h2>
+                <p>
+                    I chose a mobile-first approach for both design and development. People all around the world are gaining access to the internet via smartphones, while access to desktop computers remains limited. Most crafting websites are not mobile-friendly and require the user to download PDFs of the instructions, which are not easily scalable or interactive. With a focus on accessibility, I hope to reach a much broader group of people and make it easier to craft on the go.
+                    <br><br>
+                    I am currently building the app with Node, Express, Mongo, and Jade templating engine, while rapidly improving my skills in CSS and Javascript. I hope to create an experience that is simple and fully responsive. You can view my code in progress on <a href="https://github.com/t-lamb/theknit">Github</a>.
+                </p>
+            </div>
+            <div class="proj-item img-block">
+                <img src="imgs/theknit/theknit_wires.png" alt="interface">
+            </div>
+        </div><!-- end flex-wrap -->
 
-    <div class="flex-wrap">
-        <div class="page-head">
-            <h1>The Knit Net</h1>
-            <p class="tag-line">
-                A web app to make knitting more accessible
-            </p>
-        </div>
-        <div class="proj-item vert">
-            <img src="imgs/theknit/theknit_head.jpg" alt="the knit">
-        </div>
-        <div class="proj-item text-block">
-            <p>
-                The idea for The Knit Net started as a simple javascript app, <a href="knit-like-me/index.html">Knit Like Me</a>, that I made to demonstrate the similarities between knitting and programming. While focusing on this metaphor, I ended up in many discussions with classmates about how crafting has been left behind by the tech world and how this could be improved.
-                <br><br>
-                My goal is to change the way people find, share, and use knitting patterns. Drawing inspiration from the open source movement, I aim to make instructions and resources more interactive and accessible, and foster a collaborative online environment. Most importantly, I want to inspire users to start, finish and share their projects.
-            </p>
-            <p>
-                <a href="http://theknit.herokuapp.com/">Visit theknit.net &#8605;</a>
-            </p>
-        </div>
-        <div class="proj-item img-block">
-            <img src="imgs/theknit/theknit_interface.jpg" alt="interface">
-        </div>
-        <div class="proj-item text-block">
-            <h2>Research &mdash;</h2>
-            <p>
-                I began by composing a picture of what it means to be a knitter today. I reached out to friends, classmates, and the online community on Reddit.com/r/knitting. My questions were centered around on what motivates someone to start a project and what that process is like. To help direct my research, I created a persona representing many of my core users.
-                <br><br>
-                I created a map of the core user flow, identifying pages and interactions that I want to see in the first version of the app. While my initial idea was centered around generating patterns, the current app encourages users to browse patterns, contribute to the library, and start new projects.
-            </p>
-        </div>
-        <div class="proj-item img-block">
-            <img class="medium" src="imgs/theknit/theknit_persona.png" alt="persona">
-            <img class="medium" src="imgs/theknit/theknit_flow.png" alt="user flow">
-        </div>
-        <div class="proj-item text-block">
-            <h2>Design &amp; Development &mdash;</h2>
-            <p>
-                I chose a mobile-first approach for both design and development. People all around the world are gaining access to the internet via smartphones, while access to desktop computers remains limited. Most crafting websites are not mobile-friendly and require the user to download PDFs of the instructions, which are not easily scalable or interactive. With a focus on accessibility, I hope to reach a much broader group of people and make it easier to craft on the go.
-                <br><br>
-                I am currently building the app with Node, Express, Mongo, and Jade templating engine, while rapidly improving my skills in CSS and Javascript. I hope to create an experience that is simple and fully responsive. You can view my code in progress on <a href="https://github.com/t-lamb/theknit">Github</a>.
-            </p>
-        </div>
-        <div class="proj-item img-block">
-            <img src="imgs/theknit/theknit_wires.png" alt="interface">
-        </div>
-    </div><!-- end flex-wrap -->
+        <div class="pagination">
+            <a class="pag-link prev" href="lovelace.html"><span class="arrow">&#8604;</span> Lovelace</a>
+            <a class="pag-link next" href="woven.html">Woven <span class="arrow">&#8605;</span></a>
+        </div><!--/pagination-->
 
-    <div class="pagination">
-        <a class="pag-link prev" href="lovelace.html"><span class="arrow">&#8604;</span> Lovelace</a>
-        <a class="pag-link next" href="woven.html">Woven <span class="arrow">&#8605;</span></a>
-    </div></--close pagination-->
-  
-    <footer>
-        <div class="footer-social">
-            <a href="http://instagram.com/flourlamb" class="social svg-hover">
-                <img src="imgs/instagram.svg" alt="instagram">
-                <img src="imgs/instagram_hover.svg" alt="instagram">
-            </a>
-            <a href="https://github.com/t-lamb" class="social svg-hover">
-                <img src="imgs/github.svg" alt="github">
-                <img src="imgs/github_hover.svg" alt="github">
-            </a>
-            <a href="http://www.linkedin.com/in/teresaflourlamb" class="social svg-hover">
-                <img src="imgs/linked.svg" alt="linked in">
-                <img src="imgs/linked_hover.svg" alt="linked in">
-            </a>
-            <a href="https://pinterest.com/flourlamb" class="social svg-hover">
-                <img src="imgs/pinterest.svg" alt="pinterest">
-                <img src="imgs/pinterest_hover.svg" alt="pinterest">
-            </a>
-        </div><!--close social-->
-        <div class="footer-email">
-            Teresa Flour Lamb
-            <br>Designer, Technologist, Crafter &amp; Educator
-            <br>Hello@TeresaFlourLamb.com
-            <br><br><br>Handmade with &#9825; by Teresa in 2016.
-
-        </div>
-    </footer>
-
-
-  </body>
+        <footer>
+            <div class="footer-social">
+                <a href="http://instagram.com/flourlamb" class="social svg-hover">
+                    <img src="imgs/instagram.svg" alt="instagram">
+                    <img src="imgs/instagram_hover.svg" alt="instagram">
+                </a>
+                <a href="https://github.com/t-lamb" class="social svg-hover">
+                    <img src="imgs/github.svg" alt="github">
+                    <img src="imgs/github_hover.svg" alt="github">
+                </a>
+                <a href="http://www.linkedin.com/in/teresaflourlamb" class="social svg-hover">
+                    <img src="imgs/linked.svg" alt="linked in">
+                    <img src="imgs/linked_hover.svg" alt="linked in">
+                </a>
+                <a href="https://pinterest.com/flourlamb" class="social svg-hover">
+                    <img src="imgs/pinterest.svg" alt="pinterest">
+                    <img src="imgs/pinterest_hover.svg" alt="pinterest">
+                </a>
+            </div><!--/social-->
+            <div class="footer-email">
+                Teresa Flour Lamb
+                <br>Designer, Technologist, Educator, &amp; Crafter
+                <br>Hello@TeresaFlourLamb.com
+                <br><br><br>Handmade with &#9825; by Teresa. &copy; 2017.
+            </div><!--/footer-email-->
+        </footer>
+    </div><!--/wrapper-->
+</body>
 </html>
