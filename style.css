@@ -227,8 +227,7 @@ header {
 
 .bio {
   padding: 0 0 2rem 0;
-  margin: 1.5rem 1.5rem 0rem 1.5rem;
-  border-bottom: 3px solid #dde8e5; }
+  margin: 1.5rem 1.5rem 0rem 1.5rem; }
 
 .bio-pic {
   background-image: url("imgs/teresa.jpg");
