@@ -69,13 +69,6 @@ html {
   font-size: 16px;
   color: #3b3a36; }
 
-a {
-  color: #A3B0AE;
-  text-decoration: none; }
-
-a:hover {
-  color: #81BBB0; }
-
 h1 {
   color: #c0dfd9;
   font-size: 3.5rem; }
@@ -97,9 +90,19 @@ p {
   font-size: 1rem;
   padding: .5rem 0 1rem; }
 
+a {
+  color: #A3B0AE;
+  text-decoration: none; }
+
+a:hover {
+  color: #81BBB0; }
+
 li {
   font-size: 1rem;
   padding: .4rem 0; }
+
+img {
+  max-width: 100%; }
 
 .svg-hover img:last-child {
   display: none; }
@@ -149,6 +152,10 @@ header {
   border-bottom: 3px solid #dde8e5; }
 
 /*--CONTENT-------------*/
+.wrapper, nav {
+  max-width: 1300px;
+  margin: auto; }
+
 .container {
   display: inline-block;
   width: 100%;

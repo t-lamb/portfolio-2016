@@ -99,6 +99,10 @@ header {
 }
 
 /*--CONTENT-------------*/
+.wrapper, nav {
+	max-width: 1300px;
+	margin: auto;
+}
 .container {
 	display: inline-block;
 	width:100%;
