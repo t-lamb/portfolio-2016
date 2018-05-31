@@ -251,7 +251,7 @@ header {
   filter: grayscale(0%); }
 
 .info-text {
-  padding: 0 1.5rem 1.5rem 1.5rem;
+  padding: 0 1.5rem 2.5rem 1.5rem;
   border-bottom: 1px solid #dde8e5; }
 
 .proj-item {
